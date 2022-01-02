@@ -11,6 +11,20 @@
 		</style>
 	</head>
 	<body>
+		<div class="area">
+			<ul class="circles">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+			</ul>
+		</div>
 		<main class="main container">
 			<!-- BASICS -->
 			<%~ include("basic", {
@@ -18,52 +32,8 @@
 				formatDate: it.formatDate
 			}) %>
 			
-			<div class="main-wrapper">
+			<div class="main-wrapper grid">
 				<div class="left">
-					<!-- PROJECT -->
-					<%~ include("project", {
-						resume: it.resume,
-						formatDate: it.formatDate
-					}) %>
-
-					<!-- WORK -->
-					<%~ include("work", {
-						resume: it.resume,
-						formatDate: it.formatDate
-					}) %>
-
-					<!-- EDUCATION -->
-					<%~ include("education", {
-						resume: it.resume,
-						formatDate: it.formatDate
-					}) %>
-					
-					<!-- PUBLICATION -->
-					<%~ include("publication", {
-						resume: it.resume,
-						formatDate: it.formatDate
-					}) %>
-					
-					<!-- REFERENCE -->
-					<%~ include("reference", {
-						resume: it.resume,
-						formatDate: it.formatDate
-					}) %>
-					
-					<!-- VOLUNTEER -->
-					<%~ include("volunteer", {
-						resume: it.resume,
-						formatDate: it.formatDate
-					}) %>
-					
-					<!-- CERTIFICATION -->
-					<%~ include("certification", {
-						resume: it.resume,
-						formatDate: it.formatDate
-					}) %>
-				</div>
-
-				<div class="right">
 					<!-- SKILLS -->
 					<%~ include("skills", {
 						resume: it.resume,
@@ -90,6 +60,50 @@
 
 					<!-- PROFILE -->
 					<%~ include("profile", {
+						resume: it.resume,
+						formatDate: it.formatDate
+					}) %>
+					
+					<!-- REFERENCE -->
+					<%~ include("reference", {
+						resume: it.resume,
+						formatDate: it.formatDate
+					}) %>
+					
+					<!-- VOLUNTEER -->
+					<%~ include("volunteer", {
+						resume: it.resume,
+						formatDate: it.formatDate
+					}) %>
+				</div>
+
+				<div class="right">
+					<!-- PROJECT -->
+					<%~ include("project", {
+						resume: it.resume,
+						formatDate: it.formatDate
+					}) %>
+
+					<!-- WORK -->
+					<%~ include("work", {
+						resume: it.resume,
+						formatDate: it.formatDate
+					}) %>
+
+					<!-- EDUCATION -->
+					<%~ include("education", {
+						resume: it.resume,
+						formatDate: it.formatDate
+					}) %>
+					
+					<!-- PUBLICATION -->
+					<%~ include("publication", {
+						resume: it.resume,
+						formatDate: it.formatDate
+					}) %>
+					
+					<!-- CERTIFICATION -->
+					<%~ include("certification", {
 						resume: it.resume,
 						formatDate: it.formatDate
 					}) %>
